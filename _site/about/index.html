@@ -1,85 +1,346 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About | Your awesome title</title>
-<meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="About" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/about/" />
-<meta property="og:url" content="http://localhost:4000/about/" />
-<meta property="og:site_name" content="Your awesome title" />
-<script type="application/ld+json">
-{"name":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/about/","headline":"About","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
-
-  <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
-
-  </div>
-
-</article>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Your awesome title</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+<!doctype html>
+<!--别人你亲人两行泪、您的扫描指纹已留！-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>恭喜你-大黑阔</title>
+    <style>
+        body {
+            background: #000;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            font-family: 'Anton', sans-serif;
+            justify-content: center;
+            align-items: center;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+        }
+        div {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+        .rail {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-transform: rotateX(-30deg) rotateY(-30deg);
+            transform: rotateX(-30deg) rotateY(-30deg);
+        }
+        .rail .stamp {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #141414;
+            color: #fff;
+            font-size: 7rem;
+        }
+        .rail .stamp:nth-child(1) {
+            -webkit-animation: stampSlide 40000ms -2300ms linear infinite;
+            animation: stampSlide 40000ms -2300ms linear infinite;
+        }
+        .rail .stamp:nth-child(2) {
+            -webkit-animation: stampSlide 40000ms -4300ms linear infinite;
+            animation: stampSlide 40000ms -4300ms linear infinite;
+        }
+        .rail .stamp:nth-child(3) {
+            -webkit-animation: stampSlide 40000ms -6300ms linear infinite;
+            animation: stampSlide 40000ms -6300ms linear infinite;
+        }
+        .rail .stamp:nth-child(4) {
+            -webkit-animation: stampSlide 40000ms -8300ms linear infinite;
+            animation: stampSlide 40000ms -8300ms linear infinite;
+        }
+        .rail .stamp:nth-child(5) {
+            -webkit-animation: stampSlide 40000ms -10300ms linear infinite;
+            animation: stampSlide 40000ms -10300ms linear infinite;
+        }
+        .rail .stamp:nth-child(6) {
+            -webkit-animation: stampSlide 40000ms -12300ms linear infinite;
+            animation: stampSlide 40000ms -12300ms linear infinite;
+        }
+        .rail .stamp:nth-child(7) {
+            -webkit-animation: stampSlide 40000ms -14300ms linear infinite;
+            animation: stampSlide 40000ms -14300ms linear infinite;
+        }
+        .rail .stamp:nth-child(8) {
+            -webkit-animation: stampSlide 40000ms -16300ms linear infinite;
+            animation: stampSlide 40000ms -16300ms linear infinite;
+        }
+        .rail .stamp:nth-child(9) {
+            -webkit-animation: stampSlide 40000ms -18300ms linear infinite;
+            animation: stampSlide 40000ms -18300ms linear infinite;
+        }
+        .rail .stamp:nth-child(10) {
+            -webkit-animation: stampSlide 40000ms -20300ms linear infinite;
+            animation: stampSlide 40000ms -20300ms linear infinite;
+        }
+        .rail .stamp:nth-child(11) {
+            -webkit-animation: stampSlide 40000ms -22300ms linear infinite;
+            animation: stampSlide 40000ms -22300ms linear infinite;
+        }
+        .rail .stamp:nth-child(12) {
+            -webkit-animation: stampSlide 40000ms -24300ms linear infinite;
+            animation: stampSlide 40000ms -24300ms linear infinite;
+        }
+        .rail .stamp:nth-child(13) {
+            -webkit-animation: stampSlide 40000ms -26300ms linear infinite;
+            animation: stampSlide 40000ms -26300ms linear infinite;
+        }
+        .rail .stamp:nth-child(14) {
+            -webkit-animation: stampSlide 40000ms -28300ms linear infinite;
+            animation: stampSlide 40000ms -28300ms linear infinite;
+        }
+        .rail .stamp:nth-child(15) {
+            -webkit-animation: stampSlide 40000ms -30300ms linear infinite;
+            animation: stampSlide 40000ms -30300ms linear infinite;
+        }
+        .rail .stamp:nth-child(16) {
+            -webkit-animation: stampSlide 40000ms -32300ms linear infinite;
+            animation: stampSlide 40000ms -32300ms linear infinite;
+        }
+        .rail .stamp:nth-child(17) {
+            -webkit-animation: stampSlide 40000ms -34300ms linear infinite;
+            animation: stampSlide 40000ms -34300ms linear infinite;
+        }
+        .rail .stamp:nth-child(18) {
+            -webkit-animation: stampSlide 40000ms -36300ms linear infinite;
+            animation: stampSlide 40000ms -36300ms linear infinite;
+        }
+        .rail .stamp:nth-child(19) {
+            -webkit-animation: stampSlide 40000ms -38300ms linear infinite;
+            animation: stampSlide 40000ms -38300ms linear infinite;
+        }
+        .rail .stamp:nth-child(20) {
+            -webkit-animation: stampSlide 40000ms -40300ms linear infinite;
+            animation: stampSlide 40000ms -40300ms linear infinite;
+        }
+        @-webkit-keyframes stampSlide {
+            0% {
+                -webkit-transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(130px);
+                transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(130px);
+            }
+            100% {
+                -webkit-transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(-3870px);
+                transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(-3870px);
+            }
+        }
+        @keyframes stampSlide {
+            0% {
+                -webkit-transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(130px);
+                transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(130px);
+            }
+            100% {
+                -webkit-transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(-3870px);
+                transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(-3870px);
+            }
+        }
+        .world {
+            -webkit-transform: rotateX(-30deg) rotateY(-30deg);
+            transform: rotateX(-30deg) rotateY(-30deg);
+        }
+        .world .forward {
+            position: absolute;
+            -webkit-animation: slide 2000ms linear infinite;
+            animation: slide 2000ms linear infinite;
+        }
+        .world .box {
+            width: 200px;
+            height: 200px;
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            -webkit-animation: roll 2000ms cubic-bezier(1, 0.01, 1, 1) infinite;
+            animation: roll 2000ms cubic-bezier(1, 0.01, 1, 1) infinite;
+        }
+        .world .box .wall {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid #fafafa;
+            box-sizing: border-box;
+        }
+        .world .box .wall::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 7rem;
+        }
+        .world .box .wall:nth-child(1) {
+            -webkit-transform: translateZ(100px);
+            transform: translateZ(100px);
+        }
+        .world .box .wall:nth-child(2) {
+            -webkit-transform: rotateX(180deg) translateZ(100px);
+            transform: rotateX(180deg) translateZ(100px);
+        }
+        .world .box .wall:nth-child(3) {
+            -webkit-transform: rotateX(90deg) translateZ(100px);
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .world .box .wall:nth-child(3)::before {
+            -webkit-transform: rotateX(180deg) rotateZ(90deg) translateZ(-1px);
+            transform: rotateX(180deg) rotateZ(90deg) translateZ(-1px);
+            -webkit-animation: zeroFour 4000ms -2000ms linear infinite;
+            animation: zeroFour 4000ms -2000ms linear infinite;
+        }
+        .world .box .wall:nth-child(4) {
+            -webkit-transform: rotateX(-90deg) translateZ(100px);
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .world .box .wall:nth-child(4)::before {
+            -webkit-transform: rotateX(180deg) rotateZ(-90deg) translateZ(-1px);
+            transform: rotateX(180deg) rotateZ(-90deg) translateZ(-1px);
+            -webkit-animation: zeroFour 4000ms -2000ms linear infinite;
+            animation: zeroFour 4000ms -2000ms linear infinite;
+        }
+        .world .box .wall:nth-child(5) {
+            -webkit-transform: rotateY(90deg) translateZ(100px);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .world .box .wall:nth-child(5)::before {
+            -webkit-transform: rotateX(180deg) translateZ(-1px);
+            transform: rotateX(180deg) translateZ(-1px);
+            -webkit-animation: zeroFour 4000ms linear infinite;
+            animation: zeroFour 4000ms linear infinite;
+        }
+        .world .box .wall:nth-child(6) {
+            -webkit-transform: rotateY(-90deg) translateZ(100px);
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .world .box .wall:nth-child(6)::before {
+            -webkit-transform: rotateX(180deg) rotateZ(180deg) translateZ(-1px);
+            transform: rotateX(180deg) rotateZ(180deg) translateZ(-1px);
+            -webkit-animation: zeroFour 4000ms linear infinite;
+            animation: zeroFour 4000ms linear infinite;
+        }
+        @-webkit-keyframes zeroFour {
+            0% {
+                content: '客';
+            }
+            100% {
+                content: '黑';
+            }
+        }
+        @keyframes zeroFour {
+            0% {
+                content: '客';
+            }
+            100% {
+                content: '黑';
+            }
+        }
+        @-webkit-keyframes roll {
+            0% {
+                -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+            }
+            85% {
+                -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+            }
+            87% {
+                -webkit-transform: rotateZ(88deg);
+                transform: rotateZ(88deg);
+            }
+            90% {
+                -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+            }
+            100% {
+                -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+            }
+        }
+        @keyframes roll {
+            0% {
+                -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+            }
+            85% {
+                -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+            }
+            87% {
+                -webkit-transform: rotateZ(88deg);
+                transform: rotateZ(88deg);
+            }
+            90% {
+                -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+            }
+            100% {
+                -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(-200px);
+                transform: translateX(-200px);
+            }
+        }
+        @keyframes slide {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(-200px);
+                transform: translateX(-200px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="rail">
+    <div class="stamp four">！</div>
+    <div class="stamp zero">客</div>
+    <div class="stamp four">黑</div>
+    <div class="stamp zero">！</div>
+    <div class="stamp four">见</div>
+    <div class="stamp zero">再</div>
+    <div class="stamp four">！</div>
+    <div class="stamp zero">客</div>
+    <div class="stamp four">黑</div>
+    <div class="stamp zero">是</div>
+    <div class="stamp four">都</div>
+    <div class="stamp zero">家</div>
+    <div class="stamp four">全</div>
+    <div class="stamp zero">你</div>
+    <div class="stamp four">！</div>
+    <div class="stamp zero">客</div>
+    <div class="stamp four">黑</div>
+    <div class="stamp zero">！</div>
+    <div class="stamp four">好</div>
+    <div class="stamp zero">你</div>
 </div>
-
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-      </div>
+<div class="world">
+    <div class="forward">
+        <div class="box">
+            <div class="wall"></div>
+            <div class="wall"></div>
+            <div class="wall"></div>
+            <div class="wall"></div>
+            <div class="wall"></div>
+            <div class="wall"></div>
+        </div>
     </div>
-
-  </div>
-
-</footer>
+</div>
 </body>
-
 </html>
